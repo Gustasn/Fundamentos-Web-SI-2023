@@ -1,0 +1,22 @@
+body{
+    background-color: #000;
+    color: white;
+}
+h1:hover{
+    color: aqua;
+    transition: ease all 0.7s;
+}
+.test{
+    color: black;
+    height: 20px;
+    text-decoration: dashed;
+}
+.test:hover{
+    color: white;
+    transition: ease all 0.7s;
+}
+.test.img:hover{
+    background-color: white;
+    color: black;
+    transition: ease all 0.7s;
+}

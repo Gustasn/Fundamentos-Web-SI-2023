@@ -20,3 +20,7 @@ h1:hover{
     color: black;
     transition: ease all 0.7s;
 }
+a{
+    color: aliceblue;
+    text-decoration: none;
+}

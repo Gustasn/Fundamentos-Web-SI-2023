@@ -1,23 +1,10 @@
 
 h1:hover{
-    color: aqua;
+    color: indigo;
     transition: ease all 0.7s;
 }
-.test{
+
+.teste a{
     color: black;
-    height: 20px;
-    text-decoration: dashed;
-}
-.test:hover{
-    color: white;
-    transition: ease all 0.7s;
-}
-.test.img:hover{
-    background-color: white;
-    color: black;
-    transition: ease all 0.7s;
-}
-a{
-    color: aliceblue;
-    text-decoration: none;
+    position: absolute;
 }

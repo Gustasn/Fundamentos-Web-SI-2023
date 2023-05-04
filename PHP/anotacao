@@ -1,0 +1,15 @@
+create table Produto(
+	idProduto int primary key auto_increment,
+    nomeProduto varchar (30),
+    PesoProduto double,
+    PrecoProduto double
+);
+
+create table Pessoa(
+	CPF varchar (15) primary key,
+    nomePessoa varchar (30),
+    IdadePessoa int
+);
+
+drop table Produto;
+drop table Pessoa;

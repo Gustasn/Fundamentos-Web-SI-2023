@@ -11,10 +11,14 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO estado (nomeEstado) values ('Sao Paulo')";
+        $sql = "INSERT INTO Pessoa (CPF, nomePessoa, IdadePessoa)
+        VALUES ('123.415.698-10', 'Gustavo', '20');";
 
-if (mysqli_query($conn, $sql)) {
-  echo "New record created successfully";
+        $sql .= "INSERT INTO Pessoa (CPF, nomePessoa, IdadePessoa)
+        VALUES ('123.456.789-80', 'Lucas', '21');";
+
+if (mysqli_multi_query($conn, $sql)) {
+  echo "New records created successfully";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
